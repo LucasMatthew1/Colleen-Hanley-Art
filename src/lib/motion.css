@@ -1,0 +1,18 @@
+/* The motion layer's global rules. Imported once, in src/main.tsx, so they
+   survive any rewrite of globals.css. */
+
+/* Reduced motion: every CSS animation and transition (Tailwind's animate-*,
+   transition-*, keyframes) jumps to its end state. 0.01ms rather than 0, so
+   animationend / transitionend still fire. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
