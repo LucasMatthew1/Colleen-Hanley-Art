@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Brand Col */}
           <div className="md:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <img src="/assets/boaz-logo.png" alt="Logo" className="w-12 h-12 brightness-0 invert" />
+              <img src="/assets/boaz-logo.png" alt="Logo" className="w-16 h-16 object-contain" />
               <span className="font-display text-2xl tracking-tighter">{content.site.name}</span>
             </Link>
             <p className="text-primary-foreground/80 max-w-md mb-6 leading-relaxed font-sans">
@@ -33,7 +33,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-display text-lg mb-6 text-accent">Navigation</h4>
+            <h4 className="font-display text-lg mb-6 text-white border-b border-accent/30 pb-2">Navigation</h4>
             <ul className="space-y-4 text-xs uppercase tracking-widest font-bold text-primary-foreground/80">
               <li><Link to="/" className="hover:text-accent transition-colors">Home</Link></li>
               <li><Link to="/about-author" className="hover:text-accent transition-colors">About Me</Link></li>
@@ -46,18 +46,18 @@ const Footer = () => {
 
           {/* Contact info */}
           <div>
-            <h4 className="font-display text-lg mb-6 text-accent">Contact Information</h4>
+            <h4 className="font-display text-lg mb-6 text-white border-b border-accent/30 pb-2">Contact Information</h4>
             <ul className="space-y-4 text-sm text-primary-foreground/90 font-sans">
               <li className="flex items-start gap-2">
-                <span className="font-bold text-accent">E:</span>
+                <span className="font-bold text-white">E:</span>
                 <a href={`mailto:${content.site.email}`} className="hover:text-white transition-colors underline underline-offset-4 decoration-accent/30">{content.site.email}</a>
               </li>
               <li className="flex items-start gap-2">
-                <span className="font-bold text-accent">P:</span>
+                <span className="font-bold text-white">P:</span>
                 <span>{content.site.phone}</span>
               </li>
               <li className="flex items-start gap-2">
-                <span className="font-bold text-accent">A:</span>
+                <span className="font-bold text-white">A:</span>
                 <span>{content.site.address}</span>
               </li>
             </ul>
@@ -66,7 +66,7 @@ const Footer = () => {
                  href={content.book.buyUrl} 
                  target="_blank" 
                  rel="noopener noreferrer" 
-                 className="text-xs uppercase tracking-widest font-bold text-accent hover:text-white transition-colors flex items-center gap-2"
+                 className="text-xs uppercase tracking-widest font-bold text-white hover:text-accent transition-colors flex items-center gap-2"
                >
                  Purchase the Book &rarr;
                </a>

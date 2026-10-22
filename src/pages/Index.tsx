@@ -50,7 +50,6 @@ const Index = () => {
           
           <Reveal delay={0.4} hero>
             <div className="space-y-4 mb-6">
-              <p className="text-xl md:text-2xl font-display text-accent uppercase tracking-[0.2em] mb-2">Colleen Hanley Prior</p>
               <h1 className="text-5xl md:text-7xl lg:text-9xl font-display tracking-tighter uppercase leading-[0.9]">
                 {content.site.name}
               </h1>
@@ -87,13 +86,14 @@ const Index = () => {
       <section className="py-32 bg-background relative border-b border-primary/10">
         <div className="container px-6 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <Reveal x={-40}>
-              <div className="relative p-4 border-2 border-black bg-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
+            <Reveal x={-20}>
+              <div className="relative p-4 border-2 border-black bg-white shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] group">
                 <img 
                   src={content.book.coverImage} 
                   alt={content.book.title} 
-                  className="relative w-full h-auto grayscale-0 contrast-125"
+                  className="relative w-full h-auto grayscale-0 contrast-125 transition-transform duration-700 group-hover:scale-[1.02]"
                 />
+
                 <div className="absolute -top-4 -right-4 bg-accent text-slate-950 font-bold px-6 py-2 border-2 border-black rotate-3 text-sm uppercase tracking-widest">
                   Featured Book
                 </div>
@@ -208,7 +208,7 @@ const Index = () => {
         <div className="container px-6 mx-auto relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <div className="order-2 lg:order-1 space-y-8">
-              <Reveal x={-40}>
+              <Reveal x={-20}>
                 <h2 className="text-4xl md:text-6xl font-display uppercase tracking-tighter leading-none mb-8">Colleen Hanley Prior</h2>
                 <p className="text-xl text-white font-sans mb-8 italic border-l-4 border-accent pl-8">
                   "Surfing led her to Costa Rica where she credits her inspiration for most of her artwork. At age 20 she relocated to San Clemente, California where she became increasingly consumed by painting and selling her art."

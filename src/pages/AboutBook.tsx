@@ -53,11 +53,7 @@ const AboutBook = () => {
                 <Reveal delay={0.2} as="h1" className="text-4xl md:text-5xl lg:text-8xl font-display leading-[0.9] mb-4 uppercase tracking-tighter">
                   {content.book.title}
                 </Reveal>
-                <Reveal delay={0.25}>
-                  <p className="text-xl md:text-2xl font-display text-accent uppercase tracking-[0.2em] mb-8">
-                    by Colleen Hanley Prior
-                  </p>
-                </Reveal>
+
                 <Reveal delay={0.3} className="text-xl md:text-2xl text-white/80 mb-12 max-w-xl leading-relaxed font-sans italic border-l-4 border-accent pl-8">
                   "{content.book.blurb}"
                 </Reveal>

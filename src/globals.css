@@ -134,6 +134,10 @@
   h3 {
     font-family: var(--font-display);
   }
+
+  .text-glow-white {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
 }
 
 /* webura:design-tokens start — managed by design_token_apply; edit the values, keep the markers */

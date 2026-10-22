@@ -12,7 +12,7 @@ export const content = {
     title: "Nami and Boaz: The Surfer's Tale",
     blurb: "Nami is a young girl who loves to surf the ocean waves. One day she meets a wise old friend, an owl named Boaz and together they enjoy the swells and speed and freedom of the surf in Nami and Boaz: The Surfer's Tale.",
     buyUrl: "https://bookstore.dorrancepublishing.com/products/nami-and-boaz-the-surfers-tale",
-    coverImage: "/assets/book-cover.jpg",
+    coverImage: "/assets/book-cover-classy.png",
     characters: [
       {
         name: "Nami",

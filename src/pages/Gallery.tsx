@@ -54,7 +54,6 @@ const Gallery = () => {
         <div className="container px-6 mx-auto relative z-10">
           <Reveal className="text-center max-w-3xl mx-auto space-y-6">
             <div className="space-y-4 mb-6">
-              <p className="text-xl md:text-2xl font-display text-accent uppercase tracking-[0.2em]">Colleen Hanley Prior</p>
               <h1 className="text-5xl md:text-8xl font-display uppercase tracking-tighter leading-none">Art Gallery</h1>
             </div>
             <div className="h-1.5 w-32 bg-accent mx-auto" />
